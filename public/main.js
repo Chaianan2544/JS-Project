@@ -5,7 +5,6 @@ const app = Vue.createApp({
             showcase1:'/img/Meedee_1.jpg',
             showcase2:'/img/Meedee_2.jpg',
             showcase3:'/img/Meedee_3.jpg',
-            cart:'/img/cart.png',
         }
     }
 })
