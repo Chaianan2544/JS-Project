@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/vue@3"></script>
     <title>Night Owl Shop</title>
 </head>
 <body>
+    
     <div id="app">
                 <a href="/"><img :src="brand" class="brand"></a>
                 <a href="/login">
@@ -20,6 +21,8 @@
             <div class="slides">
                 <input type="radio" name="pvs" id="pv1">
                 <input type="radio" name="pvs" id="pv2">
+                <input type="radio" name="pvs" id="pv3">
+                
 
                 <div class = "slide pv">
                     <img :src="showcase1">
@@ -27,15 +30,35 @@
                 <div class = "slide">
                     <img :src="showcase2">
                 </div>
-            </div>
+                <div class = "slide">
+                    <img :src="showcase3">
+                </div>
 
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
             <div class="navigation-manual">
                 <label for="pv1" class="manual-btn"></label>
                 <label for="pv2" class="manual-btn"></label>
+                <label for="pv3" class="manual-btn"></label>
             </div>
+
         </div>
         <!--Preview Slide--> 
     </div>
+    <script type="text/javascript">
+    var counter =1;
+    setInterval(function(){
+        document.getElementById('pv' + counter).checked =true;
+        counter++;
+        if (counter >3) {
+            counter =1;
+        }
+    },4000);
+    </script>
     <script src = "main.js"></script>
     <script>
         const mountedApp = app.mount('#app')
