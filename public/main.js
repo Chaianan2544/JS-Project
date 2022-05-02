@@ -12,3 +12,5 @@ const app = Vue.createApp({
         }
     }
 })
+
+let carts=document.querySelectorAll('')
