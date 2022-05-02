@@ -1,5 +1,4 @@
 require('dotenv').config();
-import '/public/main.js';
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -42,7 +41,6 @@ app.get('/cart', (req,res)=>{
 
 
 app.post('/login',(req,res)=>{
-  clearcart();
   res.redirect('/logged');
 });
 
