@@ -56,10 +56,4 @@ app.post('/register', async(req,res)=>{
   res.redirect("/login");
 });
 
-app.post('/cart', async(req,res)=>{
-  res.redirect('/logged')
-});
-
-
-
 app.listen(3000, () => console.log('Server Started'))
