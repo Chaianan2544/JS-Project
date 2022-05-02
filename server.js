@@ -56,4 +56,5 @@ app.post('/register', async(req,res)=>{
   res.redirect("/login");
 });
 
+
 app.listen(3000, () => console.log('Server Started'))
