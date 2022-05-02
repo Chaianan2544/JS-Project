@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/vue@3"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Your Cart</title>
 </head>
 
 <body>
     <div class="header">
-            <div id="app">
-                <a href="/logged"><img :src="brand" class="brand"></a> 
+        <div id="app">
+                <a href="/logged"><img :src="brand" class="brand"></a>
+                <li class="cart">
+                    <a href="/cart">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+                <a href="/logged">
+                    <button type="submit" class="button" style="float:right;">logout</button>
+                </a>  
             </div>
         </div>
     </div>
     <h1 class="h1">Your Cart</h1>
-    <script src = "main.js"></script>
+
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+        </div>
+        <div class="products">
+
+        </div>
+        <div>
+        <center>
+            <input type="button" onclick="clearcart()" value="Clear Cart">
+            <a href="logged">
+                <input type="button" onclick="confirm()" value="Confirm">
+            </a>
+            </div>
+        </center>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
     <script>
         const mountedApp = app.mount('#app')
     </script>

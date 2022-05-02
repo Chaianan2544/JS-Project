@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/vue@3"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Night Owl Shop</title>
 </head>
 
@@ -12,8 +13,12 @@
     <div class="header">
             <div id="app">
                 <a href="/logged"><img :src="brand" class="brand"></a>
-                <a href="/cart"><img :src="cart" class="cart"></a>
-                <a href="/">
+                <li class="cart">
+                    <a href="/cart">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+                <a href="/logged">
                     <button type="submit" class="button" style="float:right;">logout</button>
                 </a>  
             </div>
@@ -21,96 +26,83 @@
     </div>
     <h1 class="h1">Night Owl Shop</h1>
     <h2 class="h2">Product List</h2>
+
+
+
+
     <div class="product1">
-        <img class = "imp1" src="img/P1.jpg">
+        <img class = "imp1" src="img/p1.jpg">
             <h3 class="h3">เสื้อนักศึกษาชาย</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart1" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product2">
-        <img class = "imp2" src="img/p2.PNG">
+        <img class = "imp2" src="img/p2.jpg">
             <h3 class="h3">เสื้อนักศึกษาหญิง</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart2" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product3">
         <img class = "imp3" src="img/p3.jpg">
             <h3 class="h3">เสื้อช็อป</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart3" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product4">
         <img class = "imp4" src="img/p4.jpg">
             <h3 class="h3">เสื้อและกางเกงพละ</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart4" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product5">
-        <img class = "imp5" src="img/p5.PNG">
+        <img class = "imp5" src="img/p5.jpg">
             <h3 class="h3">กางเกงนักศึกษาชาย</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart5" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product6">
         <img class = "imp6" src="img/p6.jpg">
             <h3 class="h3">กระโปรง</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart6" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product7">
         <img class = "imp7" src="img/p7.jpg">
             <h3 class="h3">เน็คไท</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart7" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product8">
-        <img class = "imp8" src="img/p8.webp">
+        <img class = "imp8" src="img/p8.jpg">
             <h3 class="h3">เข็มขัด</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart8" href="#">Add to Cart</a>
             </center>
     </div>
     <div class="product9">
         <img class = "imp9" src="img/p9.jpg">
             <h3 class="h3">กระดุม เข็ม ติ้ง</h3>
             <center>
-                <p class="price">150 B</p>
-                <a href="/logged">
-                    <p><button type="submit">Add to Cart</button></p>
-                </a>
+                <p class="showprice">150 B</p>
+                <a class="add-cart cart9" href="#">Add to Cart</a>
             </center>
     </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="main.js"></script>
     <script>
         const mountedApp = app.mount('#app')

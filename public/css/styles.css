@@ -32,13 +32,6 @@ body{
     margin-left: 10px;
  
   }
-  .cart{
-    width: 3%;
-    height: 3%;
-    float: right;
-    margin-top: 15px;
-    margin-right: 10px;
-  }
   /*==================brand, cart===================*/
 
   /*==================Login, Register Button===================*/
@@ -225,135 +218,9 @@ body{
   }
    /*==================product===================*/
 
-  .price {
+  .showprice {
     color: white;
     font-size: 20px;
-  }
-  .product1 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product2 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product3 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product4 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product5 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product6 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product7 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product8 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product9 button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: black;
-    background-color: #79DAE8;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  .product1 button:hover {
-    opacity: 0.3;
-  }
-  .product2 button:hover {
-    opacity: 0.3;
-  }
-  .product3 button:hover {
-    opacity: 0.3;
-  }
-  .product4 button:hover {
-    opacity: 0.3;
-  }
-  .product5 button:hover {
-    opacity: 0.3;
-  }
-  .product6 button:hover {
-    opacity: 0.3;
-  }
-  .product7 button:hover {
-    opacity: 0.3;
-  }
-  .product8 button:hover {
-    opacity: 0.3;
-  }
-  .product9 button:hover {
-    opacity: 0.3;
   }
   /*==================product===================*/
   /*==================Previews===================*/
@@ -440,3 +307,151 @@ body{
     background: #C4DDFF;
   }
   /*==================Previews===================*/
+
+nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+span{
+  padding-left: 5px;
+}
+
+li a{
+  padding: 5px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.cart{
+  float: right;
+  margin-top: -20px;
+  margin-right: 50px;
+}
+
+.cart ion-icon{
+  vertical-align: bottom;
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.cart a{
+  margin-top: 35px;
+  float: right;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.add-cart {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: #79DAE8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+/*----Cart Page ----*/
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-container ion-icon{
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightskyblue;
+  margin: 0 auto;
+}
+
+.product-title{
+  border-bottom: 4px solid lightskyblue;
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+  border-bottom: 4px solid lightskyblue;
+  display: flex;
+  align-items: center;
+}
+
+.quantity{
+  width: 30%;
+  border-bottom: 4px solid lightskyblue;
+  display: flex;
+  align-items: center;
+}
+
+.total{
+  border-bottom: 4px solid lightskyblue;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.product{
+  border-bottom: 4px solid lightskyblue;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.products
+{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+.products img
+{
+  width: 75px;
+}
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  pad: 10px 0;
+}
+
+.basketTotalTitle{
+  width: 30%;
+}
+
+.basketTotal{
+  width: 10%;
+}
