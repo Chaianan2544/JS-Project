@@ -16,7 +16,7 @@ let products=[
     {
         name:'เสื้อนักศึกษาชาย',
         price:150,
-        number:'p1',
+        number:'p10',
         inCart:0
     },
     {
