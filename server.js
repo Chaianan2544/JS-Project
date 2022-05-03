@@ -41,6 +41,14 @@ app.get('/cart', (req,res)=>{
 
 
 app.post('/login',(req,res)=>{
+  const user=await User.findOne({name: req.body.name});
+  if(!user){
+    return alert("User not found");
+  }
+  const pass=await User.findOne({password: req.body.password})
+  if(!pass){
+    return alert("Incorrect Password");
+  }
   res.redirect('/logged');
 });
 
