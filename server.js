@@ -41,6 +41,7 @@ app.get('/cart', (req,res)=>{
 
 
 app.post('/login',(req,res)=>{
+  
   res.redirect('/logged');
 });
 
